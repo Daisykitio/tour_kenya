@@ -1,0 +1,501 @@
+<!doctype html>  
+<html lang="en">  
+<head>  
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title>TOUR KENYA</title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
+    <link rel="stylesheet" href="./style.css">  
+    
+</head>  
+<body>  
+    <!-- Navbar -->  
+    <nav class="navbar navbar-expand-lg bg-dark py-3">  
+        <div class="container-fluid">  
+            <a class="navbar-brand d-flex align-items-center text-white" href="#">  
+                <img src="img/C.jpg" alt="logo" width="40" height="40" class="rounded-circle">  
+                <span class="ms-2" style="font-size: 1.5rem; font-weight: bold;">Adventure</span>  
+            </a>  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">  
+                <span class="navbar-toggler-icon"></span>  
+            </button>  
+            <div class="collapse navbar-collapse" id="navbarNav">  
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">  
+                    <li class="nav-item">  
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>  
+                    </li>  
+                    <li class="nav-item">  
+                        <a class="nav-link" href="#Destinations">Destinations</a>  
+                    </li>  
+                    <li class="nav-item">  
+                        <a class="nav-link" href="#About">About</a>  
+                    </li>  
+                    <li class="nav-item">  
+                        <a class="nav-link" href="#contact us">Contact Us</a>  
+                    </li>  
+                </ul>  
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <button class="btn btn-warning ms-3" onclick="scrollToContact()">Talk to Us</button>
+                 
+            </div>  
+        </div>  
+    </nav>  
+
+   <!-- Header Section -->  
+  <header class="header-section">
+           <div class="header-content">
+               <h1 class="header-title">EXPLORE KENYA LIKE NEVER BEFORE.</h1>
+               <p class="header-subtitle">Discover breathtaking landscapes, vibrant cultures, and unforgettable adventures.</p>
+               <a href="#Destinations" class="btn btn-primary btn-custom">See Destinations</a>
+               <a href="#About" class="btn btn-secondary btn-custom">Learn More</a>
+           </div>
+           <div class="auth-links">  
+      <a href="login.html" class="text-dark">Login</a>  
+      <a href="register.html" class="text-dark ms-3">Register</a>  
+  </div>  
+
+           <div class="collage-container">
+               <img src="./img/a.JPG" alt="Collage Image 1" class="collage-image img-1">
+               <img src="./img/b.jpg" alt="Collage Image 2" class="collage-image img-2">
+               <img src="./img/c.jpg" alt="Collage Image 3" class="collage-image img-3">
+               <img src="./img/d.jpg" alt="Collage Image 4" class="collage-image img-4">
+           </div>
+       </header>
+   
+       <style>
+           /* General header styles */
+           .header-section {
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               position: relative;
+               background-color: #000; /* Optional: Add a background color */
+               color: white;
+               padding: 50px 20px;
+               text-align: left;
+           }
+   
+           .header-content {
+               max-width: 50%; /* Limit content width */
+               z-index: 2; /* Ensure the content is above the images */
+           }
+   
+           .header-title {
+               font-size: 3em; /* Large title size */
+               font-weight: bold;
+               margin-bottom: 20px;
+           }
+   
+           .header-subtitle {
+               font-size: 1.5em; /* Adjust subtitle size */
+               margin-bottom: 30px;
+           }
+   
+           .btn-custom {
+               font-size: 1.2em;
+               padding: 12px 25px;
+               margin: 10px;
+               border-radius: 5px; /* Rounded corners for buttons */
+               text-decoration: none;
+               display: inline-block;
+           }
+   
+           .btn-primary {
+               background-color: #007bff;
+               color: white;
+           }
+   
+           .btn-secondary {
+               background-color: #6c757d;
+               color: white;
+           }
+   
+           /* Collage container for random image layering */
+           .collage-container {
+               position: relative;
+               width: 40%; /* Limit the image container size */
+               height: 400px; /* Set fixed height for collage */
+           }
+   
+           /* General image styles */
+           .collage-image {
+               position: absolute;
+               object-fit: cover;
+               opacity: 0.85;
+               transition: transform 0.3s ease;
+           }
+   
+           /* Specific image adjustments for each layer */
+           .img-1 {
+               top: 0;
+               left: 0;
+               width: 50%;
+               height: 50%;
+               transform: rotate(10deg);
+           }
+   
+           .img-2 {
+               top: 20%;
+               left: 20%;
+               width: 60%;
+               height: 60%;
+               transform: rotate(-15deg);
+           }
+   
+           .img-3 {
+               top: 40%;
+               left: 10%;
+               width: 50%;
+               height: 50%;
+               transform: rotate(5deg);
+           }
+   
+           .img-4 {
+               top: 10%;
+               left: 50%;
+               width: 40%;
+               height: 40%;
+               transform: rotate(-20deg);
+           }
+   
+           /* Hover effect to make images move */
+           .collage-image:hover {
+               transform: scale(1.05) rotate(5deg);
+           }
+       </style>
+   
+   
+  <!--end of header sec -->
+  
+</header>
+
+         
+   <!--carousel-->
+
+   <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+  
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <video class="d-block w-100" autoplay loop muted>
+          <source src="video/c.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="carousel-item">
+        <video class="d-block w-100" autoplay loop muted>
+          <source src="video/b.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="carousel-item">
+        <video class="d-block w-100" autoplay loop muted>
+          <source src="video/a.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="carousel-item">
+        <video class="d-block w-100" autoplay loop muted>
+          <source src="video/d.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+
+  <!--main container-->
+<div class="container">
+<h1 class="text-center p-5 mb-5">Tour Kenya Today!</h1>
+
+<div class="w-100 bg-secondary-subtitle p-5 mb-5">
+    <p>
+        Welcome to magical Kenya,a beautiful country w ith generous,kind and lovely pple.Beautiful nature and cool climate and evergreen.Kenya has wonderful places to visit .Kenya is a beautiful and diverse country that offers incredible experiences for travelers, from stunning landscapes to rich wildlife and vibrant cultures. Lets interact with our magical seren environment.Welcome Kenya KARIBU NYUMBANI!!!
+    </p>
+    <button type="button" class="btn btn-primary btn-lg" ><a href="booking.html">book you tip no</a></button>
+</div>
+
+<h2 id="Destinations"class="fs-1 p-5 mt-5 mb-5 text-center">POPULAR DESTINATIONS</h2>
+
+<div class="row">
+    <div class="col">
+        <!--cad 1-->
+        <div class="card">
+            <img src="img/d.jpg" class="card-img-top" alt="mountains">
+            <div class="card-body">
+              <h5 class="card-title">mount Kenya</h5>
+              <p class="card-text">The second-highest mountain in Africa, Mount Kenya offers thrilling trekking opportunities through lush forests, glaciers, and alpine moorlands. The mountain has three peaks, with Batian and Nelion being technical climbs, while Point Lenana offers a more accessible trek for adventurous hikers. Along the way, you can explore wildlife such as elephants, buffalos, and various bird species.</p>
+              <a href="#" class="btn btn-primary">Read more></a>
+            </div>
+          </div>
+
+    </div>
+    <div class="col">
+        <!--cad 2-->
+        <div class="card">
+            <img src="img/a.jpg" class="card-img-top" alt="Maasai Mara National Reserve">
+            <div class="card-body">
+              <h5 class="card-title">Maasai Mara National Reserve</h5>
+              <p class="card-text">The Maasai Mara is one of the most famous safari destinations in Africa, known for the Great Migration, where over 1.5 million wildebeest, zebras, and gazelles traverse the plains between Kenya and Tanzania. The park is home to the Big Five (lion, leopard, elephant, buffalo, and rhino) and offers exceptional game viewing year-round. Hot air balloon safaris and visits to Maasai villages add to the experience.</p>
+              <a href="#" class="btn btn-primary">Read more></a>
+            </div>
+          </div>
+
+    </div>
+    <div class="col">
+        <!--cad 3-->
+        <div class="card">
+            <img src="img/g.jpg" class="card-img-top" alt="Diani Beach">
+            <div class="card-body">
+              <h5 class="card-title">Diani Beach</h5>
+              <p class="card-text">TFor a coastal escape, Diani Beach is a stunning stretch of white sand along the Indian Ocean, located south of Mombasa. It's perfect for relaxing, swimming, or indulging in water sports like snorkeling, scuba diving, and kite surfing. The area also offers luxury resorts and vibrant nightlife, with easy access to marine parks for dolphin watching and coral reef explorations.</p>
+              <a href="#" class="btn btn-primary">Read more></a>
+            </div>
+          </div>
+
+    </div>
+    <div class="col">
+        <!--cad 4-->
+        <div class="card">
+            <img src="img/h.jpg" class="card-img-top" alt="Amboseli National Park">
+            <div class="card-body">
+              <h5 class="card-title">Amboseli National Park</h5>
+              <p class="card-text">Amboseli National Park is famous for its iconic views of Mount Kilimanjaro and its large herds of elephants. The park is a photographer's paradise, with a backdrop of Africa’s tallest peak. The observation hill offers panoramic views of the entire park, and visitors can spot giraffes, lions, cheetahs, zebras, and various bird species.</p>
+              <a href="#" class="btn btn-primary">Read more></a>
+            </div>
+          </div>
+
+    </div>
+    
+    
+</div>
+</div>
+
+<!-- ABOUT -->
+<h2 id="About" class="fs-1 p-5 mt-5 mb-5 text-center">ABOUT</h2>
+<div id="about-section" class="section">
+    <div class="container">
+        <div class="content-section">
+            <div class="title">
+                <h1>About Us</h1>
+            </div>
+            <div class="content">
+                <h3>Unforgettable Adventures Across Kenya</h3>
+                <p>We are an adventure company dedicated to crafting memorable experiences for travelers looking to explore the diverse landscapes, rich culture, and stunning wildlife of Kenya. Whether you’re seeking thrilling safaris, scenic mountain treks, or serene beach escapes, we make booking your ideal trip seamless and enriching.</p>
+                <p>Our team of experienced guides and planners ensures that every journey is safe, exciting, and tailored to meet your preferences. Join us to uncover Kenya’s hidden gems and create lifelong memories in some of the world's most breathtaking destinations.</p>
+                <div class="button">
+                    <a href="#">Read More</a>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="./img/b.jpg" alt="Adventure company image">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Explore Kenya Section -->
+    <div class="col-6">
+        <div class="bg-secondary text-white p-5 mt-5 mb-5">
+            <h1>Explore Kenya</h1>
+            <p>Welcome to Explore Kenya, your ultimate guide to discovering the beauty, culture, and adventure that Kenya has to offer. Our passion for travel and deep love for Kenya's rich landscapes, wildlife, and heritage have inspired us to create a platform that connects travelers to the very best experiences in this magnificent country.</p>
+        </div>
+    </div>
+
+    <!-- Who We Are Section -->
+    <div class="col-6">
+        <div class="bg-secondary text-white p-5 mt-5 mb-5">
+            <h1>Who We Are</h1>
+            <p>We are a team of travel enthusiasts, local experts, and conservationists dedicated to showcasing the hidden gems and iconic destinations that make Kenya one of the most sought-after travel destinations in the world. From the world-renowned Maasai Mara to the pristine beaches of Diani, our goal is to provide you with personalized, authentic experiences that immerse you in the heart of Kenya's culture and natural beauty.</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- What We Do Section -->
+    <div class="col-6">
+        <div class="bg-secondary text-white p-5 mt-5 mb-5">
+            <h1>What We Do</h1>
+            <p>At Explore Kenya, we offer tailor-made travel packages, expert advice, and guided tours that cater to every kind of traveler—whether you're an adventure seeker, nature lover, or culture enthusiast. Our services include:</p>
+            <ul>
+                <li><strong>Safari Adventures:</strong> Experience the thrill of Kenya's famous wildlife in national parks like the Maasai Mara, Amboseli, Tsavo, and more.</li>
+                <li><strong>Cultural Tours:</strong> Engage with Kenya's diverse communities, learn about their traditions, and explore the rich cultural heritage that makes Kenya unique.</li>
+                <li><strong>Beach Holidays:</strong> Relax on Kenya's stunning coastline, from the tranquil shores of Lamu to the vibrant Diani Beach.</li>
+                <li><strong>Mountain Treks:</strong> Conquer Mount Kenya and other scenic treks that offer breathtaking views and encounters with wildlife.</li>
+                <li><strong>City Excursions:</strong> Discover the bustling energy of Nairobi and Mombasa with city tours, historical site visits, and modern urban adventures.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <div class="col-6">
+        <div class="bg-secondary text-white p-5 mt-5 mb-5">
+            <h1>Why Choose Us?</h1>
+            <p><strong>Local Expertise:</strong> Our team consists of local guides and experts who know Kenya inside out, ensuring that you get the most authentic and insightful experiences.</p>
+            <p><strong>Sustainable Travel:</strong> We are committed to responsible tourism that benefits local communities and preserves Kenya's wildlife and ecosystems for future generations.</p>
+            <p><strong>Customized Itineraries:</strong> No two travelers are alike. We create personalized itineraries based on your interests, budget, and schedule to give you a unique Kenyan adventure.</p>
+            <p><strong>24/7 Support:</strong> From the moment you book with us until your return home, our dedicated team is here to assist you with any questions or needs.</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Our Mission Section -->
+    <div class="col-6">
+        <div class="bg-secondary text-white p-5 mt-5 mb-5">
+            <h1>Our Mission</h1>
+            <p>At Explore Kenya, our mission is to offer unforgettable travel experiences that showcase Kenya's natural beauty and rich heritage while promoting sustainability and supporting local communities. We believe in creating connections between people and places, fostering a deep appreciation for Kenya's landscapes, wildlife, and cultures.</p>
+        </div>
+    </div>
+
+    <!-- Rates Section -->
+    <div class="col-6">
+        <div class="bg-secondary text-white p-5 mt-5 mb-5">
+            <h1>Rates</h1>
+            <p>The description of different destinations is informative, giving a solid overview of Kenya's beauty and diversity. It captures the essence of the key locations—wildlife, culture, beaches, and cities. Some parts could be expanded with more engaging storytelling or travel tips.</p>
+        </div>
+    </div>
+</div>
+
+
+<!--CONTACT US-->
+<h2 id="contact us" class="fs-1 p-5 mt-5 mb-5 text-center">CONTACT US</h2>
+
+<div class="row">
+    <!-- Contact Information Section -->
+    <div class="col-6">
+        <div class="bg-dark text-white p-5 mt-5 mb-5">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you! Whether you have a question about our services, want to plan a custom trip, or need any kind of assistance, feel free to reach out to us. Our dedicated team is here to help you.</p>
+            <ul class="list-unstyled">
+                <li><strong>Email:</strong> 
+                    <a href="mailto:info@explorekenya.com" class="text-white">info@explorekenya.com</a>
+                </li>
+                <li><strong>Phone:</strong> 
+                    <a href="tel:+254700123456" class="text-white">+254 700 123 456</a>
+                </li>
+                <li><strong>Office Hours:</strong> Mon - Fri, 9 AM - 6 PM (EAT)</li>
+                <li><strong>Location:</strong> Nairobi, Kenya</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="col-6">
+        <div class="bg-secondary text-white p-5 mt-5 mb-5">
+            <h1>Send Us a Message</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Type your message here"></textarea>
+                </div>
+                <button type="submit" class="btn btn-light">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div>
+        <h2 class="fs-1 p-5 mt-5 mb-5 text-center">RELAX IN BEAUTIFUL KENYA</h2>
+        <video class="w-100 mb-5" autoplay loop muted>
+          <source src="video/f.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+<!--ends--> 
+<!-- Include Font Awesome CSS in your <head> -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />  
+
+    <footer style="background-color: #615e5e; color: #fff; padding: 40px 20px; font-family: Arial, sans-serif;">  
+        <div style="text-align: center; margin-bottom: 20px;">  
+            <h2 style="margin: 0; font-size: 24px;">Touring Kenya Adventure</h2>  
+            <p style="margin: 5px 0 20px; font-size: 16px;">A journey through the heart of Kenya awaits you.</p>  
+            <input type="email" placeholder="Enter your email address" style="padding: 10px; width: 300px; border: none; border-radius: 5px;"/>  
+            <button style="padding: 10px 20px; background-color: #f39c12; color: #fff; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">Subscribe</button>  
+        </div>  
+    
+        <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">  
+            <div>  
+                <h4 style="font-size: 18px;">Discover</h4>  
+                <ul style="list-style: none; padding: 0;">  
+                    <li><a href="#" style="color: #fff; text-decoration: none; transition: color 0.3s;">Tours</a></li>  
+                    <li><a href="#" style="color: #fff; text-decoration: none; transition: color 0.3s;">Packages</a></li>  
+                    <li><a href="#" style="color: #fff; text-decoration: none; transition: color 0.3s;">Contact Us</a></li>  
+                </ul>  
+            </div>  
+            <div>  
+                <h4 style="font-size: 18px;">About</h4>  
+                <ul style="list-style: none; padding: 0;">  
+                    <li><a href="#" style="color: #fff; text-decoration: none; transition: color 0.3s;">Our Team</a></li>  
+                    <li><a href="#" style="color: #fff; text-decoration: none; transition: color 0.3s;">Careers</a></li>  
+                    <li><a href="#" style="color: #fff; text-decoration: none; transition: color 0.3s;">Blog</a></li>  
+                </ul>  
+            </div>  
+            <div>  
+                <h4 style="font-size: 18px;">Resources</h4>  
+                <ul style="list-style: none; padding: 0;">  
+                    <li><a href="#" style="color: #fff; text-decoration: none; transition: color 0.3s;">FAQs</a></li>  
+                    <li><a href="#" style="color: #fff; text-decoration: none; transition: color 0.3s;">Privacy Policy</a></li>  
+                    <li><a href="#" style="color: #fff; text-decoration: none; transition: color 0.3s;">Terms of Service</a></li>  
+                </ul>  
+            </div>  
+        </div>  
+    
+        <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">  
+            <div>  
+                <h4 style="font-size: 18px;">Further Information</h4>  
+                <ul style="list-style: none; padding: 0;">  
+                    <li><a href="#" style="color: #fff; text-decoration: none; transition: color 0.3s;">Terms & Conditions</a></li>  
+                    <li><a href="#" style="color: hsl(1, 87%, 27%); text-decoration: none; transition: color 0.3s;">Privacy Policy</a></li>  
+                </ul>  
+            </div>  
+            <div>  
+                <h4 style="font-size: 18px;">Follow Us</h4>  
+                <ul style="display: flex; list-style: none; padding: 0;">  
+                    <li style="margin-right: 10px;"><a href="#" style="color: #780202; text-decoration: none;"><i class="fab fa-facebook-f"></i></a></li>  
+                    <li style="margin-right: 10px;"><a href="#" style="color: #f2982a; text-decoration: none;"><i class="fab fa-twitter"></i></a></li>  
+                    <li><a href="#" style="color: #0bcbf1; text-decoration: none;"><i class="fab fa-instagram"></i></a></li>  
+                </ul>  
+            </div>  
+        </div>  
+    
+        <div style="text-align: center; margin-top: 20px;">  
+            <p style="font-size: 14px;">Copyright © 2024 Touring Kenya Adventure. All rights reserved.</p>  
+        </div>  
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

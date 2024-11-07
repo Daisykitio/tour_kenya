@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header-section">
+    <div class="header-content">
+        <h1 class="header-title">EXPLORE KENYA LIKE NEVER BEFORE.</h1>
+        <p class="header-subtitle">Discover breathtaking landscapes, vibrant cultures, and unforgettable adventures.</p>
+        <a href="#Destinations" class="btn btn-primary btn-custom">See Destinations</a>
+        <a href="#About" class="btn btn-secondary btn-custom">Learn More</a>
+    </div>
+
+    <!-- Auth Links positioned on the right -->
+    <div class="auth-links">
+        <a href="login.html" class="text-dark">Login</a>  
+        <a href="register.html" class="text-dark ms-3">Register</a>  
+    </div>
+  </header>
+
+  <!-- Collage Container (Below Login and Register, Right Aligned) -->
+  <div class="collage-container">
+    <img src="./img/a.JPG" alt="Collage Image 1" class="collage-image img-1">
+    <img src="./img/b.jpg" alt="Collage Image 2" class="collage-image img-2">
+    <img src="./img/c.jpg" alt="Collage Image 3" class="collage-image img-3">
+    <img src="./img/d.jpg" alt="Collage Image 4" class="collage-image img-4">
+  </div>
+
+  <style>
+      /* General header styles */
+      .header-section {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;  /* Align items to the top */
+          position: relative;
+          background-color: #000; /* Optional: Add a background color */
+          color: white;
+          padding: 50px 20px;
+          text-align: left;
+      }
+
+      .header-content {
+          max-width: 50%; /* Limit content width */
+          z-index: 2; /* Ensure the content is above the images */
+      }
+
+      .header-title {
+          font-size: 3em; /* Large title size */
+          font-weight: bold;
+          margin-bottom: 20px;
+      }
+
+      .header-subtitle {
+          font-size: 1.5em; /* Adjust subtitle size */
+          margin-bottom: 30px;
+      }
+
+      .btn-custom {
+          font-size: 1.2em;
+          padding: 12px 25px;
+          margin: 10px;
+          border-radius: 5px; /* Rounded corners for buttons */
+          text-decoration: none;
+          display: inline-block;
+      }
+
+      .btn-primary {
+          background-color: #007bff;
+          color: white;
+      }
+
+      .btn-secondary {
+          background-color: #6c757d;
+          color: white;
+      }
+
+      /* Auth links styles */
+      .auth-links {
+          position: absolute;
+          top: 20px; /* Adjust this value to move the auth links higher or lower */
+          right: 20px; /* Align the auth links to the right */
+          font-weight: bold; /* Make the text bold */
+          font-size: 1.2em; /* Adjust font size */
+          z-index: 3; /* Ensure it's above the images */
+      }
+
+      .auth-links a {
+          color: #000;
+          text-decoration: none;
+          margin-right: 15px; /* Add spacing between links */
+      }
+
+      /* Collage container for random image layering */
+      .collage-container {
+          position: absolute;
+          top: 120px; /* Position it below the auth links */
+          right: 20px;
+          width: 50%; /* Increase size to make collage more visible */
+          z-index: 1; /* Make sure it's below the content */
+      }
+
+      /* General image styles */
+      .collage-image {
+          position: absolute;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          opacity: 1; /* Remove opacity for visibility */
+          transition: transform 0.3s ease;
+      }
+
+      /* Specific image adjustments for each layer */
+      .img-1 {
+          top: 0;
+          left: 0;
+          width: 50%;
+          height: 50%;
+          transform: rotate(10deg);
+      }
+
+      .img-2 {
+          top: 20%;
+          left: 20%;
+          width: 60%;
+          height: 60%;
+          transform: rotate(-15deg);
+      }
+
+      .img-3 {
+          top: 40%;
+          left: 10%;
+          width: 50%;
+          height: 50%;
+          transform: rotate(5deg);
+      }
+
+      .img-4 {
+          top: 10%;
+          left: 50%;
+          width: 40%;
+          height: 40%;
+          transform: rotate(-20deg);
+      }
+
+      /* Hover effect to make images move */
+      .collage-image:hover {
+          transform: scale(1.05) rotate(5deg);
+      }
+  </style>
+</body>
+</html>

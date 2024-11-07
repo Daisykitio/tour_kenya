@@ -1,0 +1,275 @@
+      /* Round logo styling */
+      .navbar-brand img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+
+      /* Navbar item hover and active styles */
+      .nav-link {
+        transition: all 0.3s ease-in-out;
+      }
+
+      .nav-link:hover, .nav-link.active {
+        background-color: #007bff; /* Change background color on hover */
+        color: white !important; /* Change text color */
+        transform: scale(1.1); /* Enlarge slightly */
+        border-radius: 5px;
+      }
+
+      /* Adjust login, register, sign-in */
+      .auth-links {
+        margin-left: auto; /* Push to right */
+        
+      }
+
+      .auth-links a {
+        margin-left: 20px;
+        font-size: 1rem;
+        text-decoration: none;
+      }
+
+      .auth-links a:hover {
+        color: #007bff;
+      }
+      .header-section {  
+        position: relative; /* Ensure the header section is a positioned element */  
+        /* existing styles... */  
+    }  
+    
+    .auth-links {  
+        position: absolute; /* Positioning the div absolutely */  
+        top: 20px; /* Adjust as needed for spacing */  
+        right: 20px; /* Adjust to place it slightly from the right */  
+        z-index: 1; /* Ensure it appears on top of other content */  
+    }  
+    
+    .auth-links a {  
+        color: hsl(0, 0%, 3%); /* To ensure the links are visible */  
+        text-decoration: none; /* Optional: remove underline from links */
+        font-weight: bold; /* Make the text bold */
+        font-size: 1.2em; /* Make the text larger, you can adjust the size as needed */
+    }
+    
+    .auth-links a:hover {  
+        text-decoration: underline; /* Optional: underline on hover for better UX */  
+    }
+    
+        .header-section {  
+            background: url('h.jpg') no-repeat center center;  
+            background-size: cover;  
+            color: hsl(190, 80%, 72%);  
+            padding: 100px 0;  
+            text-align: left;  
+            display: flex;  
+            align-items: center;  
+        }  
+        .header-content {  
+            flex: 1;  
+        }  
+        .header-title {  
+            font-size: 3rem;  
+            font-weight: bold;  
+        }  
+        .header-subtitle {  
+            font-size: 1.5rem;  
+            margin-bottom: 20px;  
+        }  
+        .btn-custom {  
+            margin-right: 10px;  
+        }  
+               /*  <style>*/ 
+        /* General header styles */
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            background-color: #000; /* Optional: Add a background color */
+            color: white;
+            padding: 50px 20px;
+            text-align: left;
+        }
+
+        .header-content {
+            max-width: 50%; /* Limit content width */
+            z-index: 2; /* Ensure the content is above the images */
+        }
+
+        .header-title {
+            font-size: 3em; /* Large title size */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .header-subtitle {
+            font-size: 1.5em; /* Adjust subtitle size */
+            margin-bottom: 30px;
+        }
+
+        .btn-custom {
+            font-size: 1.2em;
+            padding: 12px 25px;
+            margin: 10px;
+            border-radius: 5px; /* Rounded corners for buttons */
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        /* Collage container for random image layering */
+        .collage-container {
+            position: relative;
+            width: 40%; /* Limit the image container size */
+            height: 400px; /* Set fixed height for collage */
+        }
+
+        /* General image styles */
+        .collage-image {
+            position: absolute;
+            object-fit: cover;
+            opacity: 0.85;
+            transition: transform 0.3s ease;
+        }
+
+        /* Specific image adjustments for each layer */
+        .img-1 {
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 50%;
+            transform: rotate(10deg);
+        }
+
+        .img-2 {
+            top: 20%;
+            left: 20%;
+            width: 60%;
+            height: 60%;
+            transform: rotate(-15deg);
+        }
+
+        .img-3 {
+            top: 40%;
+            left: 10%;
+            width: 50%;
+            height: 50%;
+            transform: rotate(5deg);
+        }
+
+        .img-4 {
+            top: 10%;
+            left: 50%;
+            width: 40%;
+            height: 40%;
+            transform: rotate(-20deg);
+        }
+
+        /* Hover effect to make images move */
+        .collage-image:hover {
+            transform: scale(1.05) rotate(5deg);
+        }
+    /*  </style>*/ 
+         
+        /* Custom styles for navbar */  
+        .navbar-toggler {  
+            border-color: rgba(255, 255, 255, 0.5); /* Change toggler border color */  
+        }  
+        .navbar-toggler-icon {  
+            background-color: white; /* Change toggler icon color */  
+        }  
+        .navbar-collapse {  
+            background-color: rgba(0, 0, 0, 0.9); /* Background color for expanded navbar */  
+        }  
+        .navbar-nav .nav-link {  
+            color: white; /* Text color for nav links */  
+        }  
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+#about-section * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#about-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 10%);
+}
+
+#about-section .container {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#about-section .content-section {
+    width: 50%;
+}
+
+#about-section .image-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-section .image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#about-section .title h1 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#about-section .content h3 {
+    font-size: 24px;
+    color: #f1f1f1;
+    margin-bottom: 15px;
+}
+
+#about-section .content p {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#about-section .button a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(75, 223, 7);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#about-section .social {
+    margin-top: 20px;
+}
+
+#about-section .social a {
+    color: #f1f1f1;
+    margin-right: 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+        
+    
